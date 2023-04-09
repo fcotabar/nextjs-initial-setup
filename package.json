@@ -6,9 +6,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "npm run lint:ts",
+    "lint": "npm run lint:ts && npm run lint:css",
+    "lint:fix": "npm run lint:ts:fix && npm run lint:css:fix",
     "lint:ts": "next lint",
     "lint:ts:fix": "npm run lint:ts -- --fix",
+    "lint:css": "stylelint '**/*.{css,scss}'",
+    "lint:css:fix": "npm run lint:css -- --fix",
     "prepare": "husky install"
   },
   "dependencies": {
@@ -27,6 +30,12 @@
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^4.2.1",
     "husky": "^8.0.0",
-    "prettier": "^2.8.7"
+    "prettier": "^2.8.7",
+    "stylelint": "^15.4.0",
+    "stylelint-config-recommended": "^11.0.0",
+    "stylelint-config-recommended-scss": "^9.0.1",
+    "stylelint-config-standard": "^32.0.0",
+    "stylelint-config-standard-scss": "^7.0.1",
+    "stylelint-prettier": "^3.0.0"
   }
 }

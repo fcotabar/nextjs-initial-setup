@@ -43,6 +43,7 @@
     "unit-allowed-list": [
       "em",
       "rem",
+      "ch",
       "vh",
       "v",
       "%",
@@ -59,6 +60,6 @@
   },
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true,
-    "source.fixAll.stylelint": false
+    "source.fixAll.stylelint": true
   }
 }
