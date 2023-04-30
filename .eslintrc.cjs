@@ -1,4 +1,8 @@
 module.exports = {
+  env: {
+    browser: true,
+    es2021: true,
+  },
   extends: [
     'next/core-web-vitals',
     'prettier',
@@ -19,5 +23,12 @@ module.exports = {
     project: ['./tsconfig.json'],
   },
   plugins: ['react', 'prettier', 'testing-library'],
-  rules: {},
+  rules: {
+    'react/function-component-definition': [
+      2,
+      {
+        namedComponents: ['function-declaration', 'arrow-function'],
+      },
+    ],
+  },
 };
