@@ -28,7 +28,7 @@
     "**/*.tsx",
     "jest.config.mjs",
     "jest.setup.js",
-    "next.config.mjs",
+    "next.config.js",
     ".eslintrc.cjs",
   ],
   "exclude": ["node_modules"]
